@@ -1,0 +1,27 @@
+2026-04-20 19:29:33,660 - INFO - Real-Time Emotion Detection Application started.
+2026-04-20 19:29:33,709 - WARNING - HDF5 load with custom_objects failed: No model config found in the file at D:\MoodTracker\Real-Time-Emotion-Detection\models\face_emotion_model1.h5.
+2026-04-20 19:29:33,711 - WARNING - Direct HDF5 load failed: No model config found in the file at D:\MoodTracker\Real-Time-Emotion-Detection\models\face_emotion_model1.h5.
+2026-04-20 19:29:34,430 - INFO - Model loaded from JSON+weights successfully.
+2026-04-20 19:29:34,491 - INFO - Haar Cascade loaded successfully.
+2026-04-20 19:29:34,508 - INFO - Application running successfully.
+2026-04-20 19:29:36,408 - WARNING - From D:\MoodTracker\venv\Lib\site-packages\keras\src\backend\common\global_state.py:82: The name tf.reset_default_graph is deprecated. Please use tf.compat.v1.reset_default_graph instead.
+
+2026-04-20 19:29:46,310 - INFO - Real-Time Emotion Detection Application started.
+2026-04-20 19:30:02,022 - INFO - Application running successfully.
+2026-04-20 19:30:17,340 - INFO - Real-Time Emotion Detection Application started.
+2026-04-20 19:30:17,361 - INFO - Application running successfully.
+2026-04-20 19:30:35,793 - INFO - Real-Time Emotion Detection Application started.
+2026-04-20 19:30:36,883 - INFO - Application running successfully.
+2026-04-20 19:31:01,183 - INFO - Real-Time Emotion Detection Application started.
+2026-04-20 19:31:01,214 - INFO - Application running successfully.
+2026-04-20 19:31:01,927 - INFO - Real-Time Emotion Detection Application started.
+2026-04-20 19:31:03,056 - WARNING - TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+2026-04-20 19:31:10,826 - INFO - Application running successfully.
+2026-04-20 19:31:23,733 - INFO - Real-Time Emotion Detection Application started.
+2026-04-20 19:31:23,771 - INFO - Application running successfully.
+2026-04-20 19:31:35,624 - INFO - Real-Time Emotion Detection Application started.
+2026-04-20 19:31:36,353 - INFO - Application running successfully.
+2026-04-20 19:35:38,006 - INFO - Real-Time Emotion Detection Application started.
+2026-04-20 19:35:38,044 - INFO - Application running successfully.
+2026-04-20 19:35:45,008 - INFO - Real-Time Emotion Detection Application started.
+2026-04-20 19:35:47,007 - INFO - Application running successfully.

@@ -1,0 +1,6 @@
+2026-04-20 20:04:38,336 - INFO - Real-Time Emotion Detection Application started.
+2026-04-20 20:04:38,387 - WARNING - HDF5 load with custom_objects failed: No model config found in the file at D:\MoodTracker\Real-Time-Emotion-Detection\models\face_emotion_model1.h5.
+2026-04-20 20:04:38,388 - WARNING - Direct HDF5 load failed: No model config found in the file at D:\MoodTracker\Real-Time-Emotion-Detection\models\face_emotion_model1.h5.
+2026-04-20 20:04:39,132 - INFO - Model loaded from JSON+weights successfully.
+2026-04-20 20:04:39,240 - INFO - Haar Cascade loaded successfully.
+2026-04-20 20:04:39,259 - INFO - Application running successfully.
