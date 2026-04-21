@@ -1,0 +1,6 @@
+2026-04-20 23:58:56,160 - INFO - Real-Time Emotion Detection Application started.
+2026-04-20 23:58:57,051 - INFO - Model loaded from JSON+weights successfully.
+2026-04-20 23:58:57,098 - INFO - Haar Cascade loaded successfully.
+2026-04-20 23:58:59,743 - WARNING - From C:\Users\Aditya Sharma\AppData\Roaming\Python\Python313\site-packages\keras\src\backend\common\global_state.py:82: The name tf.reset_default_graph is deprecated. Please use tf.compat.v1.reset_default_graph instead.
+
+2026-04-20 23:59:06,214 - INFO - Real-Time Emotion Detection Application started.

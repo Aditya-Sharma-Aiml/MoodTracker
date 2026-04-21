@@ -1,0 +1,44 @@
+2026-04-21 11:43:47,100 - INFO - Real-Time Emotion Detection Application started.
+2026-04-21 11:43:47,983 - INFO - Model loaded from JSON+weights successfully.
+2026-04-21 11:43:48,051 - INFO - Haar Cascade loaded successfully.
+2026-04-21 11:43:50,961 - WARNING - From C:\Users\Aditya Sharma\AppData\Roaming\Python\Python313\site-packages\keras\src\backend\common\global_state.py:82: The name tf.reset_default_graph is deprecated. Please use tf.compat.v1.reset_default_graph instead.
+
+2026-04-21 11:44:06,804 - INFO - Real-Time Emotion Detection Application started.
+2026-04-21 11:44:10,044 - INFO - Real-Time Emotion Detection Application started.
+2026-04-21 11:44:13,432 - WARNING - TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+2026-04-21 11:44:14,730 - INFO - Real-Time Emotion Detection Application started.
+2026-04-21 11:45:04,367 - INFO - Real-Time Emotion Detection Application started.
+2026-04-21 11:45:14,777 - INFO - Real-Time Emotion Detection Application started.
+2026-04-21 11:45:18,250 - INFO - Real-Time Emotion Detection Application started.
+2026-04-21 11:45:19,712 - INFO - Real-Time Emotion Detection Application started.
+2026-04-21 11:49:52,882 - INFO - Real-Time Emotion Detection Application started.
+2026-04-21 11:50:04,681 - INFO - Real-Time Emotion Detection Application started.
+2026-04-21 11:50:17,786 - INFO - Real-Time Emotion Detection Application started.
+2026-04-21 11:50:27,706 - INFO - Real-Time Emotion Detection Application started.
+2026-04-21 11:50:29,934 - INFO - Real-Time Emotion Detection Application started.
+2026-04-21 11:50:31,977 - INFO - Real-Time Emotion Detection Application started.
+2026-04-21 11:55:55,285 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6000' coro=<WebSocketProtocol13.write_message.<locals>.wrapper() done, defined at C:\Users\Aditya Sharma\AppData\Roaming\Python\Python313\site-packages\tornado\websocket.py:1086> exception=WebSocketClosedError()>
+Traceback (most recent call last):
+  File "C:\Users\Aditya Sharma\AppData\Roaming\Python\Python313\site-packages\tornado\websocket.py", line 1088, in wrapper
+    await fut
+tornado.iostream.StreamClosedError: Stream is closed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Aditya Sharma\AppData\Roaming\Python\Python313\site-packages\tornado\websocket.py", line 1090, in wrapper
+    raise WebSocketClosedError()
+tornado.websocket.WebSocketClosedError
+2026-04-21 11:56:18,765 - INFO - Real-Time Emotion Detection Application started.
+2026-04-21 11:56:23,889 - INFO - Real-Time Emotion Detection Application started.
+2026-04-21 11:56:25,764 - INFO - Real-Time Emotion Detection Application started.
+2026-04-21 11:56:26,907 - INFO - Real-Time Emotion Detection Application started.
+2026-04-21 11:56:31,829 - INFO - Real-Time Emotion Detection Application started.
+2026-04-21 11:56:34,465 - INFO - Real-Time Emotion Detection Application started.
+2026-04-21 11:56:37,459 - INFO - Real-Time Emotion Detection Application started.
+2026-04-21 11:56:39,177 - INFO - Real-Time Emotion Detection Application started.
+2026-04-21 12:13:51,457 - INFO - Real-Time Emotion Detection Application started.
+2026-04-21 12:13:56,596 - INFO - Real-Time Emotion Detection Application started.
+2026-04-21 12:13:59,039 - INFO - Real-Time Emotion Detection Application started.
+2026-04-21 12:14:00,838 - INFO - Real-Time Emotion Detection Application started.

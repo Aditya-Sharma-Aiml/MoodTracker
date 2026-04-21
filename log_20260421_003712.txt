@@ -1,0 +1,3 @@
+2026-04-21 00:37:12,503 - INFO - Real-Time Emotion Detection Application started.
+2026-04-21 00:37:13,131 - INFO - Model loaded from JSON+weights successfully.
+2026-04-21 00:37:13,176 - INFO - Haar Cascade loaded successfully.

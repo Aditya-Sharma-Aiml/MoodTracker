@@ -1,0 +1,9 @@
+2026-04-20 23:14:53,765 - INFO - Real-Time Emotion Detection Application started.
+2026-04-20 23:14:54,766 - INFO - Model loaded from JSON+weights successfully.
+2026-04-20 23:14:54,833 - INFO - Haar Cascade loaded successfully.
+2026-04-20 23:14:57,529 - WARNING - From C:\Users\Aditya Sharma\AppData\Roaming\Python\Python313\site-packages\keras\src\backend\common\global_state.py:82: The name tf.reset_default_graph is deprecated. Please use tf.compat.v1.reset_default_graph instead.
+
+2026-04-20 23:15:34,862 - INFO - Real-Time Emotion Detection Application started.
+2026-04-20 23:15:45,118 - INFO - Real-Time Emotion Detection Application started.
+2026-04-20 23:15:48,278 - WARNING - TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+2026-04-20 23:16:05,578 - INFO - Real-Time Emotion Detection Application started.

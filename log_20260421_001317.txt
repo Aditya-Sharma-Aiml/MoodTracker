@@ -1,0 +1,14 @@
+2026-04-21 00:13:17,536 - INFO - Real-Time Emotion Detection Application started.
+2026-04-21 00:13:18,158 - INFO - Model loaded from JSON+weights successfully.
+2026-04-21 00:13:18,206 - INFO - Haar Cascade loaded successfully.
+2026-04-21 00:13:33,720 - INFO - Real-Time Emotion Detection Application started.
+2026-04-21 00:13:35,208 - INFO - Real-Time Emotion Detection Application started.
+2026-04-21 00:13:41,409 - INFO - Real-Time Emotion Detection Application started.
+2026-04-21 00:13:42,641 - INFO - Real-Time Emotion Detection Application started.
+2026-04-21 00:13:44,380 - INFO - Real-Time Emotion Detection Application started.
+2026-04-21 00:13:46,124 - INFO - Real-Time Emotion Detection Application started.
+2026-04-21 00:13:48,989 - WARNING - TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+2026-04-21 00:14:29,932 - INFO - Real-Time Emotion Detection Application started.
+2026-04-21 00:14:39,556 - INFO - Real-Time Emotion Detection Application started.
+2026-04-21 00:14:42,315 - INFO - Real-Time Emotion Detection Application started.
+2026-04-21 00:15:25,873 - INFO - Real-Time Emotion Detection Application started.
