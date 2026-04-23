@@ -9,7 +9,17 @@
 
 ## 📋 Quick Navigation
 
-🏠 [Overview](#-project-overview) | ✨ [Features](#-features) | 🏗️ [Architecture](#-architecture) | 🧰 [Tech Stack](#-tech-stack) | 📁 [Structure](#-file-structure) | 🚀 [Setup](#-installation--setup) | 📖 [Usage](#-usage-guide) | 🔬 [Technical](#-technical-deep-dive) | 📊 [Performance](#-performance-metrics) | ⚠️ [Known Issues](#-known-issues) | 🚀 [Future](#-future-improvements)
+🏠 [Overview](#-project-overview) | 🎥 [Demo Video](#-demo-video) | ✨ [Features](#-features) | 🏗️ [Architecture](#-architecture) | 🧰 [Tech Stack](#-tech-stack) | 📁 [Structure](#-file-structure) | 🚀 [Setup](#-installation--setup) | 📖 [Usage](#-usage-guide) | 🔬 [Technical](#-technical-deep-dive) | 📊 [Performance](#-performance-metrics) | ⚠️ [Known Issues](#-known-issues) | 🚀 [Future](#-future-improvements)
+
+---
+
+## 🎥 Demo Video
+
+Project demo video is available here:
+
+- [Watch or download `demo.mp4`](./demo.mp4)
+
+> Note: The video is stored using Git LFS because of its large size.
 
 ---
 
