@@ -2,7 +2,7 @@
 
 > **Analyze emotions through text, face, and voice using AI-powered machine learning models**
 
-**Version:** 1.0.0 | **Author:** Aditya Sharma | **Last Updated:** April 20, 2026  
+**Version:** 2.0.0 | **Author:** Aditya Sharma | **Last Updated:** April 20, 2026  
 **License:** © 2026 MoodTracker. All rights reserved.
 
 ---
