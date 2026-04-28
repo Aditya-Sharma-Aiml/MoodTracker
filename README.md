@@ -2,7 +2,7 @@
 
 > **Analyze emotions through text, face, and voice using AI-powered machine learning models**
 
-**Version:** 2.0.0 | **Author:** Aditya Sharma | **Last Updated:** April 20, 2026  
+**Version:** 2.0.0 | **Author:** Aditya Sharma | **Last Updated:** April 29, 2026  
 **License:** © 2026 MoodTracker. All rights reserved.
 
 ---
@@ -76,27 +76,27 @@ To demonstrate how different AI/ML techniques (NLP, Computer Vision, Speech Proc
 
 ## 🏗️ Architecture
 
-### Hub-Based Multi-Page Design
+### Hub-Based Multi-Page Design (6 Pages)
 
 ```
-┌─────────────────────────────────────────────────┐
-│     🎭 MoodTracker Landing Page (Main Hub)      │
-│     landing_page.py - Central Navigation         │
-└──────────────────────┬──────────────────────────┘
-                       │
-        ┌──────────────┼──────────────┐
-        │              │              │
-   ┌────▼────────┐ ┌──▼──────────┐ ┌──▼────────────┐
-   │   NLP Text  │ │Face Emotion │ │Voice Analyzer │
-   │  Emotion    │ │ Detection   │ │   (Streamlit) │
-   │ (Page 1)    │ │  (Page 2)   │ │    (Page 3)   │
-   └────┬────────┘ └──┬──────────┘ └──┬────────────┘
-        │              │              │
-   ┌────▼────────┐ ┌──▼──────────┐ ┌──▼────────────┐
-   │ Logistic    │ │  Keras CNN  │ │ SpeechRec +  │
-   │ Regression  │ │  + OpenCV   │ │  TextBlob    │
-   │  + TF-IDF   │ │  Haar Casc. │ │  + Matplotlib│
-   └─────────────┘ └─────────────┘ └──────────────┘
+┌──────────────────────────────────────────────────────────────┐
+│         🎭 MoodTracker Home Hub (home.py)                   │
+│              Central Navigation & Dashboard                  │
+└─────────────────────────┬────────────────────────────────────┘
+                          │
+        ┌─────────────────┼─────────────────┐
+        │                 │                 │
+   ┌────▼──────────┐ ┌────▼──────────┐ ┌───▼───────────┐
+   │ 📝 Text       │ │ 📷 Face       │ │ 🎙️  Voice     │
+   │ Emotion       │ │ Emotion       │ │ Analysis      │
+   │ (Page 1)      │ │ (Page 2)      │ │ (Page 3)      │
+   └────┬──────────┘ └────┬──────────┘ └───┬───────────┘
+        │                 │                 │
+   ┌────▼──────────┐ ┌────▼──────────┐ ┌───▼───────────┐
+   │ 📊 History    │ │ 📈 Emotion    │ │ ℹ️ About      │
+   │ Dashboard     │ │ Comparison    │ │ Page          │
+   │ (Page 4)      │ │ (Page 5)      │ │ (Page 6)      │
+   └───────────────┘ └───────────────┘ └───────────────┘
 ```
 
 ### Data Flow Architecture
@@ -224,34 +224,50 @@ MoodTracker/
 ├── 📋 requirements.txt                    # Consolidated dependencies (68 packages)
 ├── 🎙️  voice_mood_analyzer.py             # Standalone voice analyzer (Tkinter)
 │
-├── 📄 landing_page.py                     # Main Hub - Entry point
+├── 📄 home.py                             # Main Hub - Entry point
 │   └─ Uses st.switch_page() for navigation
+│   └─ Dashboard with total analyses counter
 │
 ├── 📁 pages/                              # Streamlit multi-page apps
-│   ├── 1_nlp_text_emotion.py              # NLP text emotion (175 lines)
-│   │   ├─ Text input form
-│   │   ├─ Logistic Regression model load
+│   ├── 1_Text_Emotion_Analysis.py         # NLP text emotion analysis
+│   │   ├─ Text input form (up to 2000 chars)
+│   │   ├─ Logistic Regression + TF-IDF
 │   │   ├─ Emotion prediction + confidence
 │   │   ├─ Probability distribution chart
-│   │   └─ Back button to hub
+│   │   └─ Emotion emoji visualization
 │   │
-│   ├── 2_realtime_detection.py            # Face emotion detection (343 lines)
+│   ├── 2_Face_Emotion_Detection.py        # Face emotion detection
 │   │   ├─ Webcam or image upload
 │   │   ├─ Haar Cascade face detection
 │   │   ├─ Keras CNN classification
 │   │   ├─ Multi-face support
-│   │   ├─ Bounding box visualization
-│   │   └─ Back button to hub
+│   │   ├─ Real-time bounding boxes
+│   │   └─ Emotion confidence display
 │   │
-│   └── 3_voice_analyzer.py                # Voice mood analysis (160 lines)
-│       ├─ Live recording with START/STOP
-│       ├─ Audio file upload (5 formats)
-│       ├─ Google Speech-to-Text
-│       ├─ TextBlob sentiment analysis
-│       ├─ Mood classification
-│       ├─ Analytics & charts
-│       ├─ Recording history
-│       └─ Back button to hub
+│   ├── 3_Voice_Emotion_Analysis.py        # Voice mood analysis
+│   │   ├─ Live recording with START/STOP
+│   │   ├─ Audio file upload (WAV, MP3, OGG, M4A, FLAC)
+│   │   ├─ Google Speech-to-Text API
+│   │   ├─ TextBlob sentiment analysis
+│   │   ├─ Mood classification & charts
+│   │   └─ Session recording history
+│   │
+│   ├── 4_history_dashboard.py             # Historical data visualization
+│   │   ├─ Mood trends over time
+│   │   ├─ Statistics and analytics
+│   │   ├─ Historical comparison
+│   │   └─ Data export functionality
+│   │
+│   ├── 5_Emotion_Comparison.py            # Cross-modal emotion comparison
+│   │   ├─ Compare emotions across modalities
+│   │   ├─ Multi-modal analysis insights
+│   │   └─ Accuracy metrics display
+│   │
+│   └── 6_about.py                         # About & help page
+│       ├─ Project information
+│       ├─ Feature descriptions
+│       ├─ FAQ section
+│       └─ Contact & support info
 │
 ├── 📁 Emotion_Detector/                   # (Legacy) Standalone app
 │   ├── main.py
@@ -386,18 +402,18 @@ streamlit run landing_page.py
 venv\Scripts\activate
 
 # Run application
-streamlit run landing_page.py
+streamlit run home.py
 
 # Opens at: http://localhost:8501
 ```
 
-### Feature 1: NLP Text Emotion Analysis
+### Feature 1: NLP Text Emotion Analysis (Page 1)
 
-**Purpose:** Classify emotions from written text with confidence scores.
+**Purpose:** Classify emotions from written text with high accuracy using machine learning.
 
 **How to Use:**
 
-1. Navigate to "📝 NLP Text Emotion" from hub
+1. Navigate to "📝 Text Emotion Analysis" from hub
 2. Enter text (up to 2000 characters) in the text area
 3. Click "Analyze Emotion"
 4. View results:
@@ -434,13 +450,13 @@ Probabilities: {Happy: 0.89, Joy: 0.07, Neutral: 0.04, ...}
 
 ---
 
-### Feature 2: Real-Time Face Emotion Detection
+### Feature 2: Face Emotion Detection (Page 2)
 
-**Purpose:** Detect emotions from facial expressions in real-time or from images.
+**Purpose:** Detect emotions from facial expressions in real-time or from images using deep learning.
 
 **How to Use:**
 
-1. Navigate to "📷 Face Detection" from hub
+1. Navigate to "📷 Face Emotion Detection" from hub
 2. Choose mode:
    - **Webcam**: Click "Start Webcam" (grants camera access)
    - **Upload Image**: Click "Upload Image" and select file (JPG, PNG)
@@ -476,7 +492,7 @@ Probabilities: {Happy: 0.89, Joy: 0.07, Neutral: 0.04, ...}
 
 ---
 
-### Feature 3: Voice Mood Analysis
+### Feature 3: Voice Emotion Analysis (Page 3)
 
 **Purpose:** Analyze mood from spoken audio using speech-to-text and sentiment analysis.
 
@@ -484,7 +500,7 @@ Probabilities: {Happy: 0.89, Joy: 0.07, Neutral: 0.04, ...}
 
 **Option A: Live Recording**
 
-1. Navigate to "🎙️ Voice Analyzer" from hub
+1. Navigate to "🎙️ Voice Emotion Analysis" from hub
 2. Click "🎤 Start Recording"
 3. Speak clearly into microphone
 4. Click "⏹️ Stop Recording" when done
@@ -528,6 +544,61 @@ Probabilities: {Happy: 0.89, Joy: 0.07, Neutral: 0.04, ...}
 - Analytics: total recordings, mood distribution
 - Charts: pie chart of moods, line chart of trends
 - Data persists during session
+
+---
+
+### Feature 4: History Dashboard (Page 4)
+
+**Purpose:** Track mood trends and historical emotion data over time.
+
+**Features:**
+
+- 📊 Mood trend visualization
+- 📈 Historical statistics and analytics
+- 📉 Comparative analysis
+- 💾 Data persistence and export
+- 🔄 Session-based mood tracking
+
+**Use Cases:**
+
+- Monitor emotional patterns
+- Identify mood triggers
+- Track progress over time
+- Export data for further analysis
+
+---
+
+### Feature 5: Emotion Comparison (Page 5)
+
+**Purpose:** Compare emotions across different modalities (text, face, voice).
+
+**Features:**
+
+- 🔀 Cross-modal emotion comparison
+- 📊 Side-by-side accuracy metrics
+- 🎯 Insight generation
+- 💡 Confidence score analysis
+
+**Use Cases:**
+
+- Validate emotion detection across modalities
+- Identify discrepancies
+- Multi-modal emotion analysis
+- Research and analysis
+
+---
+
+### Feature 6: About Page (Page 6)
+
+**Purpose:** Provide project information, FAQ, and support.
+
+**Sections:**
+
+- ℹ️ Project overview and description
+- ❓ Frequently Asked Questions (FAQ)
+- 🔧 Technical information
+- 📧 Support and contact details
+- 🌐 Links and resources
 
 ---
 
@@ -718,26 +789,89 @@ st.session_state.recordings.append({
 
 ---
 
+## 📄 Additional Features
+
+### Feature 4: History Dashboard (Page 4)
+
+**Purpose:** Track mood trends and historical emotion data over time.
+
+**Features:**
+
+- 📊 Mood trend visualization
+- 📈 Historical statistics and analytics
+- 📉 Comparative analysis
+- 💾 Data persistence and export
+- 🔄 Session-based mood tracking
+
+**Use Cases:**
+
+- Monitor emotional patterns over time
+- Identify mood triggers and patterns
+- Track progress and mood changes
+- Export data for further analysis
+
+---
+
+### Feature 5: Emotion Comparison (Page 5)
+
+**Purpose:** Compare emotions across different modalities (text, face, voice).
+
+**Features:**
+
+- 🔀 Cross-modal emotion comparison
+- 📊 Side-by-side accuracy metrics
+- 🧠 Insight generation
+- 💡 Confidence score analysis
+
+**Use Cases:**
+
+- Validate emotion detection across modalities
+- Identify discrepancies between different input types
+- Multi-modal emotion analysis
+- Research and comparative studies
+
+---
+
+### Feature 6: About Page (Page 6)
+
+**Purpose:** Provide project information, FAQ, and support resources.
+
+**Sections:**
+
+- ℹ️ Project overview and description
+- ❓ Frequently Asked Questions (FAQ)
+- 🔧 Technical information
+- 📧 Support and contact details
+- 🌐 Links and resources
+
+---
+
 ### Streamlit Multi-Page Architecture
 
 **Navigation System:**
 
 - **Primary Method**: `st.switch_page()` function
-- **Advantages**: Single app instance, session state shared, smooth navigation
-- **Alternative**: Previously used hardcoded localhost URLs (deprecated)
+- **Advantages**: Single app instance, session state shared across all pages, smooth navigation
+- **Page Count**: 6 integrated pages for complete emotion analysis workflow
 
 **File Structure:**
 
 ```
-landing_page.py (Main entry point)
-    ├─ st.switch_page("pages/1_nlp_text_emotion.py")
-    ├─ st.switch_page("pages/2_realtime_detection.py")
-    └─ st.switch_page("pages/3_voice_analyzer.py")
+home.py (Main entry point - Hub)
+    ├─ st.switch_page("pages/1_Text_Emotion_Analysis.py")
+    ├─ st.switch_page("pages/2_Face_Emotion_Detection.py")
+    ├─ st.switch_page("pages/3_Voice_Emotion_Analysis.py")
+    ├─ st.switch_page("pages/4_history_dashboard.py")
+    ├─ st.switch_page("pages/5_Emotion_Comparison.py")
+    └─ st.switch_page("pages/6_about.py")
 
-pages/ (Sub-pages)
-    ├─ 1_nlp_text_emotion.py
-    ├─ 2_realtime_detection.py
-    └─ 3_voice_analyzer.py
+pages/ (Sub-pages - 6 total)
+    ├─ 1_Text_Emotion_Analysis.py
+    ├─ 2_Face_Emotion_Detection.py
+    ├─ 3_Voice_Emotion_Analysis.py
+    ├─ 4_history_dashboard.py
+    ├─ 5_Emotion_Comparison.py
+    └─ 6_about.py
 ```
 
 **Session State Pattern:**
@@ -746,19 +880,23 @@ pages/ (Sub-pages)
 # Persistent across page navigation
 st.session_state.user_mood_history = [...]
 st.session_state.selected_feature = "NLP"
+st.session_state.total_analyses = 0
 
 # Unique button keys prevent duplicate element errors
 st.button("Analyze", key="analyze_nlp_unique_1")
 st.button("Back", key="back_to_hub_final")
 ```
 
-**Key Fixes Applied:**
+**Key Features & Fixes:**
 
-- ✅ Replaced `st.heading()` with `st.subheader()` (API change)
-- ✅ All button keys are unique to prevent duplicate element errors
+- ✅ All 6 pages seamlessly integrated with navigation
+- ✅ Session state shared across all pages
+- ✅ Unique button keys for each element to prevent errors
 - ✅ Audio format auto-conversion (MP3 → WAV) using pydub
 - ✅ Keras model loading with custom objects handling
 - ✅ Error handling for API failures and missing files
+- ✅ Responsive UI layout with proper styling
+- ✅ Total analyses counter on hub page
 
 ---
 
